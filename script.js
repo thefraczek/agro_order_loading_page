@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
+    var windowHeight = window.innerHeight;
     var imageSection = document.getElementById('image-section');
-    imageSection.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+
+    var opacity = 1 - Math.max(0, Math.min(1, (scrollPosition / windowHeight) * 0.5));
+
+    imageSection.style.opacity = opacity;
 });

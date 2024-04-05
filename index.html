@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroOrder - Zarządzaj zamówieniami warzyw łatwo</title>
+    <title>AgroOrder - Zarządzaj gospodarstwem i zamówieniami</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,38 +18,57 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h2>O AgroOrder</h2>
-        <p>AgroOrder to innowacyjna platforma zaprojektowana, aby ułatwić zarządzanie zamówieniami warzyw na rynku...</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>O AgroOrder</h2>
+            <p>AgroOrder to innowacyjna platforma zaprojektowana, aby ułatwić zarządzanie zamówieniami warzyw na rynku...</p>
+        </section>
 
-    <section id="features">
-        <h2>Funkcjonalności</h2>
-        <div class="column-container">
-            <div class="column">
-                <h3>Zarządzanie zamówieniami</h3>
-                <p>Łatwe tworzenie, edycja i śledzenie zamówień w czasie rzeczywistym.</p>
+        <section id="features">
+            <h2>Funkcjonalności</h2>
+            <div class="column-container">
+                <div class="column">
+                    <h3>Zarządzanie zamówieniami</h3>
+                    <p>Łatwe tworzenie, edycja i śledzenie zamówień w czasie rzeczywistym.</p>
+                </div>
+                <div class="column">
+                    <h3>Optymalizacja dostaw</h3>
+                    <p>Automatyczne planowanie dostaw w oparciu o lokalizację i dostępność.</p>
+                </div>
+                <div class="column">
+                    <h3>Zarządzanie zapasami</h3>
+                    <p>Intuicyjne narzędzia do monitorowania i prognozowania zapasów.</p>
+                </div>
+                <div class="column">
+                    <h3>Analityka i raporty</h3>
+                    <p>Zaawansowane raporty i analizy rynku wspierające strategiczne decyzje.</p>
+                </div>
             </div>
-            <div class="column">
-                <h3>Optymalizacja dostaw</h3>
-                <p>Automatyczne planowanie dostaw w oparciu o lokalizację i dostępność.</p>
-            </div>
-            <div class="column">
-                <h3>Zarządzanie zapasami</h3>
-                <p>Intuicyjne narzędzia do monitorowania i prognozowania zapasów.</p>
-            </div>
-            <div class="column">
-                <h3>Analityka i raporty</h3>
-                <p>Zaawansowane raporty i analizy rynku wspierające strategiczne decyzje.</p>
-            </div>
-        </div>
+        </section>
 
         <div id="image-section">
-            <img src="logo.png" alt="Obrazek ilustrujący AgroOrder" class="responsive-image">
+            <img src="logo.png" alt="Zdjęcie farmy" class="responsive-image">
         </div>
         
-    </section>
-    
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Imię:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 AgroOrder. Wszelkie prawa zastrzeżone.</p>
