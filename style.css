@@ -39,3 +39,42 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.column-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+#image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
